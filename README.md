@@ -4,14 +4,16 @@
 git clone https://github.com/shevardenna/calculate-commission-fees.git
 cd calculate-commission-fees
 cp .env.example .env
-set CUREENCY_RATES_API value in .env file
+````
+Set CUREENCY_RATES_API value in .env file
+````
 composer install
 ````
-After this you can calculate commission fees by this command
+After this, you can calculate commission fees by running this command:
 ````
  php artisan calculate:commissions {url}
 ````
-Example CSV URL: https://gist.githubusercontent.com/shevardenna/fc5e974bfce07fc670ccf891ef007ed2/raw/6297c75ea3d75fafedd36eb9e7dacd4df9554a56/clients.csv
+For example, you can use this CSV URL: https://gist.githubusercontent.com/shevardenna/fc5e974bfce07fc670ccf891ef007ed2/raw/6297c75ea3d75fafedd36eb9e7dacd4df9554a56/clients.csv
 
 ## How to run test
 ````
@@ -33,7 +35,7 @@ Test takes input:
 2016-02-15,1,private,withdraw,300.00,EUR
 2016-02-19,5,private,withdraw,3000000,JPY
 ````
-calculates commission fees by given excahnge rate
+It calculates the commission fees based on the given exchange rates:
 ````
 EUR:USD - 1:1.1497
 EUR:JPY - 1:129.53
