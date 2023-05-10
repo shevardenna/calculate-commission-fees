@@ -21,7 +21,6 @@ class CalculatorServiceTest extends TestCase
         $this->clients = $this->getClients();
         $this->expectedCommissions = $this->getExpectedCommissions();
         $this->rates = $this->getRates();
-        $this->service = App::make(CalculatorService::class);
     }
 
 
